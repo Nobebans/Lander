@@ -1,4 +1,6 @@
-﻿namespace Länder
+﻿using System.Xml;
+
+namespace Länder
 {
     internal class Program
     {
@@ -25,6 +27,16 @@
             sverige.Print();
             tyskland.Print();
             sanMarino.Print();
+
+            Land[] länder = new Land[7];
+            länder[0] = sverige;
+            länder[1] = tyskland;
+            länder[2] = sanMarino;
+            länder[3] = new Land { namn = "Danmark", styretyp = "monarki", huvudstad = "Köpenhamn", invånarantal = "5928364" };
+            länder[4] = new Land { namn = "Italien", styretyp = "republik", huvudstad = "Rom", invånarantal = "58853482" };
+            länder[5] = new Land { namn = "Tjekien", styretyp = "republik", huvudstad = "Prag", invånarantal = "10551219" };
+            länder[6] = new Land { namn = "Rumänien", styretyp = "republik", huvudstad = "Bukarest", invånarantal = "19760314" };
+
         }
     }
 }
