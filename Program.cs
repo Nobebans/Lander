@@ -46,7 +46,7 @@ namespace Länder
             {
                 if (länder[i].styretyp == "republik")
                 {
-                    Console.WriteLine(länder[i].namn);
+                    länder[i].Print();
                 }               
             }
         }
