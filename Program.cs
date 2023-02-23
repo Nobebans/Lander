@@ -37,9 +37,17 @@ namespace Länder
             länder[5] = new Land { namn = "Tjekien", styretyp = "republik", huvudstad = "Prag", invånarantal = "10551219" };
             länder[6] = new Land { namn = "Rumänien", styretyp = "republik", huvudstad = "Bukarest", invånarantal = "19760314" };
 
-            foreach (Land land in länder)
+            //foreach (Land land in länder)
+            //{
+            //    land.Print();
+            //}
+
+            for (int i = 0; i <= länder.Length; i++)
             {
-                land.Print();
+                if (länder[i].styretyp == "republik")
+                {
+                    Console.WriteLine(länder[i].namn);
+                }               
             }
         }
     }
