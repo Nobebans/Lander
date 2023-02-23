@@ -24,9 +24,9 @@ namespace Länder
             Land tyskland = new Land() { namn = "Tyskland", styretyp = "republik", huvudstad = "Berlin", invånarantal = "83783902" };
             Land sanMarino = new Land() { namn = "San Marino", styretyp = "republik", huvudstad = "San Marino", invånarantal = "33600" };
 
-            sverige.Print();
-            tyskland.Print();
-            sanMarino.Print();
+            //sverige.Print();
+            //tyskland.Print();
+            //sanMarino.Print();
 
             Land[] länder = new Land[7];
             länder[0] = sverige;
@@ -37,6 +37,10 @@ namespace Länder
             länder[5] = new Land { namn = "Tjekien", styretyp = "republik", huvudstad = "Prag", invånarantal = "10551219" };
             länder[6] = new Land { namn = "Rumänien", styretyp = "republik", huvudstad = "Bukarest", invånarantal = "19760314" };
 
+            foreach (Land land in länder)
+            {
+                land.Print();
+            }
         }
     }
 }
